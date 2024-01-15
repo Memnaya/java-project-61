@@ -29,6 +29,9 @@ tasks.run {
         options.release = 20
     }
 }
+tasks.getByName("run", JavaExec::class) {
+    standardInput = System.`in`
+}
 
 
 
