@@ -12,8 +12,8 @@ public class Even {
     public static void generateGame() {
         GenerateQAA[] rightQAndA = new GenerateQAA[3];
         for (int i = 0; i < 3; i++) {
-            int randomNumber = Even.generateRandomNumber();
-            rightQAndA[i] = new GenerateQAA(String.valueOf(randomNumber), Even.rightAnswer(randomNumber));
+            int randomNumber = generateRandomNumber();
+            rightQAndA[i] = new GenerateQAA(String.valueOf(randomNumber), rightAnswer(randomNumber));
         }
         Engine.loadingGame(gameDescription(), rightQAndA);
     }

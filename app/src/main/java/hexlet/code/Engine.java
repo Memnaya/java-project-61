@@ -11,7 +11,6 @@ public class Engine {
         String playerName = Cli.getName();
         for (int i = 0; i < 3; i++) {
             System.out.println("Question: " + rightQAndA[i].getQuestion());
-            System.out.println(rightQAndA[i].toString());
             System.out.print("Your answer: ");
             String userAnswer = answer.nextLine();
             boolean isCorrect = rightQAndA[i].getAnswer().equals(userAnswer);
