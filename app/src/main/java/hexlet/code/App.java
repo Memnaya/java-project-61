@@ -1,5 +1,8 @@
 package hexlet.code;
 
+import hexlet.code.games.Calc;
+import hexlet.code.games.Even;
+
 import java.util.Scanner;
 
 class App {
@@ -18,9 +21,9 @@ class App {
         String num = scanner.nextLine();
         switch (num) {
             case "1" -> Cli.greetingUser();
-            case "2" -> Even.isEvenGame();
-            /*case "3" -> Calculator.main(args);
-            case "4" -> Gcd.main(args);
+            case "2" -> Even.generateGame();
+            case "3" -> Calc.generateGame();
+            /*case "4" -> Gcd.main(args);
             case "5" -> Progression.main(args);
             case "6" -> Prime.main(args); */
             case "0" -> System.exit(0);
