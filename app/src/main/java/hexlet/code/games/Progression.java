@@ -5,13 +5,14 @@ import hexlet.code.GenerateQAA;
 import java.util.Random;
 
 public class Progression {
+    static final int NUMBER_OF_QAA = 3;
     public static String gameDescription() {
         return "What number is missing in the progression?";
     }
 
     public static void generateGame() {
-        GenerateQAA[] rightQAndA = new GenerateQAA[3];
-        for (int i = 0; i < 3; i++) {
+        GenerateQAA[] rightQAndA = new GenerateQAA[NUMBER_OF_QAA];
+        for (int i = 0; i < NUMBER_OF_QAA; i++) {
             int[] progression = generateProgression();
 
             Random random = new Random();
@@ -27,11 +28,16 @@ public class Progression {
 
     private static int[] generateProgression() {
         Random random = new Random();
+        final int minRange = 5;
+        final int maxRange = 6;
+        int length = random.nextInt(maxRange) + minRange;
 
-        int length = random.nextInt(6) + 5;
+        final int maxInitialTerm = 101;
+        int initialTerm = random.nextInt(maxInitialTerm);
 
-        int initialTerm = random.nextInt(101);
-        int commonDifference = random.nextInt(11) + 1;
+        final int minRangeCommonDiff = 1;
+        final int maxRangeCommonDiff = 11;
+        int commonDifference = random.nextInt(maxRangeCommonDiff) + minRangeCommonDiff;
 
         int[] progression = new int[length];
         for (int i = 0; i < length; i++) {

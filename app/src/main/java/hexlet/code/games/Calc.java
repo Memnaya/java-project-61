@@ -5,6 +5,7 @@ import hexlet.code.GenerateQAA;
 import  hexlet.code.Engine;
 
 public class Calc {
+    static final int NUMBER_OF_QAA = 3;
     private static int num1;
     private static int num2;
     private static char operator;
@@ -15,7 +16,9 @@ public class Calc {
 
     public static int generateRandomNumber() {
         Random random = new Random();
-        return random.nextInt(100) + 1;
+        final int minRange = 1;
+        final int maxRange = 100;
+        return random.nextInt(maxRange) + minRange;
     }
 
     private static char getRandomOperator() {
@@ -34,8 +37,8 @@ public class Calc {
     }
 
     public static void generateGame() {
-        GenerateQAA[] rightQAndA = new GenerateQAA[3];
-        for (int i = 0; i < 3; i++) {
+        GenerateQAA[] rightQAndA = new GenerateQAA[NUMBER_OF_QAA];
+        for (int i = 0; i < NUMBER_OF_QAA; i++) {
             num1 = generateRandomNumber();
             num2 = generateRandomNumber();
             operator = getRandomOperator();

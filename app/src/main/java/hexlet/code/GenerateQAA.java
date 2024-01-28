@@ -1,6 +1,6 @@
 package hexlet.code;
 
-public class GenerateQAA {
+final public class GenerateQAA {
     private String question;
     private String answer;
 
@@ -17,7 +17,4 @@ public class GenerateQAA {
         return answer;
     }
 
-    public String toString() {
-        return getAnswer() + " " + getQuestion();
-    }
 }

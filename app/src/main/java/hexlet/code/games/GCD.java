@@ -5,13 +5,14 @@ import hexlet.code.GenerateQAA;
 import java.util.Random;
 
 public class GCD {
+    static final int NUMBER_OF_QAA = 3;
     public static String gameDescription() {
         return "Find the greatest common divisor of given numbers.";
     }
 
     public static void generateGame() {
-        GenerateQAA[] rightQAndA = new GenerateQAA[3];
-        for (int i = 0; i < 3; i++) {
+        GenerateQAA[] rightQAndA = new GenerateQAA[NUMBER_OF_QAA];
+        for (int i = 0; i < NUMBER_OF_QAA; i++) {
             int randomNumber1 = generateRandomNumber();
             int randomNumber2 = generateRandomNumber();
             String question = randomNumber1 + " " + randomNumber2;
@@ -30,7 +31,9 @@ public class GCD {
 
     private static int generateRandomNumber() {
         Random random = new Random();
-        return random.nextInt(100) + 1;
+        final int minRange = 1;
+        final int maxRange = 100;
+        return random.nextInt(maxRange) + minRange;
     }
 
 }

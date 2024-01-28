@@ -3,13 +3,14 @@ package hexlet.code;
 import java.util.Scanner;
 
 public class Engine {
+    static final int MAX_STEPS = 3;
     public static void loadingGame(String gameDescription, GenerateQAA[] rightQAndA) {
         System.out.println("Welcome to the Brain Games!");
         Cli.greetingUser();
         System.out.println(gameDescription);
         Scanner answer = new Scanner(System.in);
         String playerName = Cli.getName();
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < MAX_STEPS; i++) {
             System.out.println("Question: " + rightQAndA[i].getQuestion());
             System.out.print("Your answer: ");
             String userAnswer = answer.nextLine();
