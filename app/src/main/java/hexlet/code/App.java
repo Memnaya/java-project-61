@@ -4,6 +4,7 @@ import hexlet.code.games.Calc;
 import hexlet.code.games.Even;
 import hexlet.code.games.GCD;
 import hexlet.code.games.Progression;
+import hexlet.code.games.Prime;
 
 import java.util.Scanner;
 
@@ -27,7 +28,7 @@ class App {
             case "3" -> Calc.generateGame();
             case "4" -> GCD.generateGame();
             case "5" -> Progression.generateGame();
-            /*case "6" -> Prime.main(args); */
+            case "6" -> Prime.generateGame();
             case "0" -> System.exit(0);
             default -> System.out.println("Invalid number");
         }

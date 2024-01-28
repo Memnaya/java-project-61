@@ -11,16 +11,20 @@ Good luck!
 
 ## Even game
 
-[![asciicast](https://asciinema.org/a/631601.svg)](https://asciinema.org/a/631601)
+[![asciicast](https://asciinema.org/a/633940.svg)](https://asciinema.org/a/633940)
 
 ## Calculate game
 
-[![asciicast](https://asciinema.org/a/631610.svg)](https://asciinema.org/a/631610)
+[![asciicast](https://asciinema.org/a/633941.svg)](https://asciinema.org/a/633941)
 
 ## GCD game
 
-[![asciicast](https://asciinema.org/a/633556.svg)](https://asciinema.org/a/633556)
+[![asciicast](https://asciinema.org/a/633942.svg)](https://asciinema.org/a/633942)
 
 ## Progression game
 
 [![asciicast](https://asciinema.org/a/633937.svg)](https://asciinema.org/a/633937)
+
+## Prime game
+
+[![asciicast](https://asciinema.org/a/633939.svg)](https://asciinema.org/a/633939)
