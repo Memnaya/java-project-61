@@ -7,7 +7,7 @@ It is a small application that interacts with the user to play computing games.
 You are asked a question, and you must answer it correctly three times.
 If the answer is incorrect, the game is reset.
 The games that are currently available are listed below.
-Good luck!
+Good luck!!!
 
 ## Even game
 
