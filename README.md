@@ -20,3 +20,7 @@ Good luck!
 ## GCD game
 
 [![asciicast](https://asciinema.org/a/633556.svg)](https://asciinema.org/a/633556)
+
+## Progression game
+
+[![asciicast](https://asciinema.org/a/633937.svg)](https://asciinema.org/a/633937)

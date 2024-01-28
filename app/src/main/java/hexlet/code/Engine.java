@@ -18,7 +18,7 @@ public class Engine {
                 System.out.println("'" + userAnswer + "' is wrong answer ;(. Correct answer was '"
                         + rightQAndA[i].getAnswer() + "'.");
                 System.out.println("Let's try again, " + playerName + "!");
-                break;
+                return;
             } else {
                 System.out.println("Correct!");
             }
