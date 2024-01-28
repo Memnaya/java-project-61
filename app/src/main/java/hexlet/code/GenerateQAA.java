@@ -1,8 +1,8 @@
 package hexlet.code;
 
-final public class GenerateQAA {
-    private String question;
-    private String answer;
+public class GenerateQAA {
+    private final String question;
+    private final String answer;
 
     public GenerateQAA(String q, String a) {
         question = q;
